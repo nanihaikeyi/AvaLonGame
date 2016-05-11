@@ -1,0 +1,33 @@
+<manifest
+    package="avalon.king.com.activity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/avalon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="avalon.king.com.activity.AvalonWelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="avalon.king.com.activity.HeroChooseActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="avalon.king.com.activity.MissionActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="avalon.king.com.activity.ResultActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+</manifest>
