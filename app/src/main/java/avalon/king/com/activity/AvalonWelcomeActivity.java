@@ -5,9 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.GridView;
+import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -34,7 +34,7 @@ public class AvalonWelcomeActivity extends AppCompatActivity {
     private TextView mTvHumNum;
     private int mCurrentHumNum;
     private boolean mHasModer;
-    private Button mButton;
+    private ImageButton mButton;
     private View mLlmethod;
 
     @Override
@@ -77,7 +77,7 @@ public class AvalonWelcomeActivity extends AppCompatActivity {
         mSbHumNum = (SeekBar) findViewById(R.id.sb_hum_num);
         mTvHumNum = (TextView) findViewById(R.id.tv_hum_num);
         mSwMethod = (Switch) findViewById(R.id.sw_method);
-        mButton = (Button) findViewById(R.id.btn_start);
+        mButton = (ImageButton) findViewById(R.id.btn_start);
         mGridView = (GridView) findViewById(R.id.gv_hero_choose);
 
         mHeroDataList = HeroListUtils.getHeroIdList(mCurrentHumNum, false);
